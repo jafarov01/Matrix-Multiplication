@@ -3,7 +3,7 @@
 * Copyright Jafarov Makhlug
 * 10/29/2021
 */
-
+	
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -30,7 +30,7 @@ int main()
 	result = multiplication(A, B);
 
 	//printing the result
-	cout << "\n\n-----------------\n\n";
+	cout << "\n\n-----------------\nResult of the multiplication: \n\n";
 	for (int i = 0; i < result.size(); i++)
 	{
 		for (int j = 0; j < result[0].size(); j++)
@@ -39,6 +39,7 @@ int main()
 		}
 		cout << endl;
 	}
+	cout << "\n-----------------\n";
 
 	return (0);
 }
@@ -63,7 +64,8 @@ bool fill(vector<vector<int>>& A, vector<vector<int>>& B)
 
 	if (columnA != rowB)
 	{
-		cout << "columnA and rowB must be the same size!\n";
+		cout << "\ncolumnA and rowB must be the same size!\n\n";
+		cout << "------------------\n\n";
 		return 0;
 	}
 
@@ -120,3 +122,4 @@ vector<vector<int>> multiplication(vector<vector<int>> A, vector<vector<int>> B)
 
 	return result;
 }
+
